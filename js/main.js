@@ -14,7 +14,7 @@ $(document).ready(function(){
 			$(".side-nav-children").css("display", "none");
 			$(this).next("div").css("display", "block");
 		}else{
-			$(".side-nav-children, dt").css("color","black");
+			$(".nav-child-item, dt").css("color","black");
 			$(".side-nav-children").css("display", "none");
 			$(this).css("color", "#ff5000");
 		}
@@ -41,6 +41,11 @@ $(document).ready(function(){
 		}else{
 			//恢复
 			$(".right-top").css({"position":"absolute", "height":"300px"});
+		}
+		if(height <= 10){
+			$("#totop").css("display", "none");
+		}else{
+			$("#totop").css("display", "block");
 		}
 	});
 });

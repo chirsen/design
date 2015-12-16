@@ -26,12 +26,17 @@ body{
 	.side-nav{
 		position: fixed;
 		left: 0px;
+		top: 0px;
+		bottom: 0px;
 		width: 200px;
-		border-right: 1px solid ;
+		border-right: 1px solid rgba(100,100,100,0.5);
+		overflow-x: hidden;
+		overflow-y: auto;
 	}
 
 	.side-nav-wrap{
 		position: relative;
+		min-height: 100%;
 	}
 
 	#side-nav-logo{
@@ -72,10 +77,11 @@ body{
 	}
 
 	.side-nav-legal{
-		position: absolute;
-		height: 60px;
-		border-bottom: 0px;
-		margin-left: 30px;
+		position: relative;
+		bottom: 0px;
+		height: 30px;
+		border-top: 1px solid rgba(50,50,50,0.14);
+		padding: 20px 0px 10px 30px;
 	}
 
 
@@ -104,9 +110,34 @@ body{
 		position: absolute;
 		top: 300px;
 		left: 200px;
-		background-color: #eaeaea;
 		height: 1000px;
 		width: 100%;
+	}
+
+	#theme-style{
+		position: absolute;
+		top: 20px;
+		right: 0px;
+		width: 60px;
+		background-color: blue;
+	}
+	#light{
+		background-color: blue;
+		height: 60px;
+	}
+
+	#light{
+		background-color: red;
+		height: 60px;
+	}
+
+	#totop{
+		display: none;
+		position: fixed;
+		height: 100px;
+		width: 100px;
+		bottom: 0px;
+		right: 0px;
 	}
 
 }
