@@ -1,4 +1,3 @@
-
 @font-face{
 	font-family: pingfan;
 	src:url('pingfan.ttf');
@@ -11,27 +10,27 @@ body{
 	margin: 0px;
 }
 
-@media screen and (max-width: 740px){
-	
-}
-@media screen and (max-width: 1220px) and (min-width: 740px){
-	
-}
-@media screen and (max-width: 1460px) and (min-width: 1220px){
-	
-}
-@media screen and (min-width: 1460px){
-
+	.moudle{
+		z-index: 40;
+		display: none;
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		background-color: rgba(5,5,5,0.5);
+	}
 
 	.side-nav{
 		position: fixed;
-		left: 0px;
 		top: 0px;
 		bottom: 0px;
 		width: 200px;
 		border-right: 1px solid rgba(100,100,100,0.5);
 		overflow-x: hidden;
 		overflow-y: auto;
+		z-index: 41;
+		background-color: white;
 	}
 
 	.side-nav-wrap{
@@ -46,16 +45,12 @@ body{
 		position: relative;
 	}
 
-	#side-nav-title{
+	.side-nav-title{
 		font-weight: 700;
 		white-space: nowrap;
-		padding-left: 30px;
-	}
-
-	.side-nav-title{
 		position: relative;
 		top: 10px;
-		padding: 10px 0px 10px 0px;
+		padding: 10px 0px 10px 30px;
 		background-color: #eeeeee;
 	}
 
@@ -66,6 +61,11 @@ body{
 
 	.side-nav-children{
 		display: none;
+	}
+
+	.nav-item{
+		text-decoration: none;
+		color: black;
 	}
 
 	.nav-child-item{
@@ -87,10 +87,8 @@ body{
 
 	.right-top{
 		position: absolute;
-		left: 200px;
 		top: 0px;
-		height: 300px;
-		width: 100%;
+		right:0px;
 		background-color: #ff5000;
 		color: white; 
 		z-index: 20;
@@ -100,35 +98,58 @@ body{
 	.right-top-title{
 		font-size: 3.0em;
 		position: relative;
-		margin-left: 10%;
+		margin-left: 5%;
+		padding-left: 50px;
 		top:60%;
 	}
 
+	.right-top-menu{
+		font-size: 1.0em;
+		padding-left: 10px;
+		cursor: pointer;
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		z-index: 21;
+	}
 
 
-	.right-content{
+	.right-content-wrap{	
 		position: absolute;
-		top: 300px;
-		left: 200px;
-		height: 1000px;
-		width: 100%;
+		right: 0px;
+		bottom: 0px;
+		text-align: center;
+		background-color: white;
+		min-height: 100%;
+	}
+
+	.content{
+		position: relative;
+		margin: 0px auto;
+		background-color: #eeeeee;
+		min-height:100%;
+	}
+
+	.footer{
+		position: relative;
+		bottom: 0px;
+		height: 30px;
+		border-top: 1px solid rgba(50,50,50,0.14);
+		padding: 20px 0px 10px 30px;
+		background-color: gray;
 	}
 
 	#theme-style{
 		position: absolute;
+		font-size: 0.7em;
 		top: 20px;
 		right: 0px;
 		width: 60px;
-		background-color: blue;
 	}
-	#light{
-		background-color: blue;
-		height: 60px;
+	#light{		
 	}
 
-	#light{
-		background-color: red;
-		height: 60px;
+	#deep{
 	}
 
 	#totop{
@@ -140,4 +161,107 @@ body{
 		right: 0px;
 	}
 
+
+
+@media screen and (max-width: 740px){
+	body{
+		overflow: auto;
+	}
+
+	.side-nav{
+		left: -201px;
+	}
+
+	.right-top{
+		position: fixed;
+		left: 0px;
+		height: 60px;
+		width: 100%;
+	}
+
+	.right-top-title{
+		font-size: 1.0em;
+		position: fixed;
+		top: 10px;
+	}
+
+	.right-content-wrap{
+		left: 0px;
+		top: 60px;
+		min-width: 480px;
+	}
+
+	.content{
+		width: 360px;
+	}
+
 }
+
+@media screen and (max-width: 1220px) and (min-width: 740px){
+	.side-nav{
+		left: -201px;
+	}
+
+	.right-top{
+		left: 0px;
+		position: absolute;
+		height: 300px;
+	}
+
+	.right-content-wrap{
+		left: 0px;
+		top: 300px;
+	}
+
+	.content{
+		width: 620px;
+	}
+}
+
+@media screen and (max-width: 1460px) and (min-width: 1220px){
+	.side-nav{
+		left: -201px;
+	}
+
+	.right-top{
+		left: 0px;
+		position: absolute;
+		height: 300px;
+	}
+
+	.right-content-wrap{
+		left: 0px;
+		top: 300px;
+	}
+
+	.content{
+		width: 1100px;
+	}
+}
+
+@media screen and (min-width: 1460px){
+	.side-nav{
+		left: 0px;
+	}
+
+	.right-top{
+		left: 200px;
+		position: absolute;
+		height: 300px;
+	}
+
+	.right-top-menu{
+		display: none;
+	}
+
+	.right-content-wrap{
+		left: 200px;
+		top: 300px;
+	}
+
+	.content{
+		width: 1140px;
+	}
+}
+
+
