@@ -1,74 +1,54 @@
 $(document).ready(function() {
-	//左侧导航
-	$("dt, .nav-child-item").mouseover(function() {
-		$(this).css("background-color", "#efefef");
-		$(this).mouseout(function() {
-			$(this).css("background-color", "white");
-		});
-	});
 
 	//导航链接被点击
 	$("dt").click(function() {
-		$(this).next("div").toggle();
-		$("dt").children("a").css("color", "black");
-		$(".nav-child-item").css("color", "black");
-		$(this).children("a").css("color", "#ff5500");
+		$(this).next("div").toggle("slow");
+		$("dt").children("a").removeClass("color-orange");
+		$("nav-child-item").removeClass("color-orange");
+		$(this).children("a").addClass("color-orange");
 	});
 
 	$(".nav-child-item").click(function() {
-		$("dt").children("a").css("color", "black");
-		$(".nav-child-item").css("color", "black");
-		$(this).css("color", "#ff5500");
+		$("dt").children("a").removeClass("color-orange");
+		$("a").removeClass("color-orange");
+		$(this).addClass("color-orange");
 	});
 
 
 
 	//右侧的伸缩
-	$(window).scroll(function() {
+	$(window).on("scroll resize",function() {
+
 		var height = $(this).scrollTop();
 		if ($(window).width() >= 720) {
 			if (height >= 100) {
-				$(".right-top").children(".right-top-title").css({
-					"position": "fixed",
-					"top": "10px",
-					"font-size": "1.0em"
-				});
+				$(".right-top").children(".right-top-title").addClass("right-top-title-changed");
 			} else {
-				$(".right-top").children(".right-top-title").css({
-					"position": "relative",
-					"top": "60%",
-					"font-size": "3em"
-				});
+				$(".right-top").children(".right-top-title").removeClass("right-top-title-changed");
 			}
 			if (height >= 240) {
 				//变为面包屑
-				$(".right-top").css({
-					"position": "fixed",
-					"height": "60px"
-				});
+				$(".right-top").addClass("right-top-changed");
 			} else {
 				//恢复
-				$(".right-top").css({
-					"position": "absolute",
-					"height": "300px"
-				});
+				$(".right-top").removeClass("right-top-changed");
 			}
 			if (height <= 10) {
-				$("#totop").css("display", "none");
+				$("#totop").addClass("element-show");
 			} else {
-				$("#totop").css("display", "block");
+				$("#totop").removeClass("element-show");
 			}
 		}
 	});
 
 	//菜单被点击
 	$(".right-top-menu").click(function() {
-		$(".moudle").css("display", "block");
-		$(".side-nav").animate({"left":"0px"});
+		$(".moudle").addClass("element-show");
+		$("#side_nav").addClass("side-nav-changed");
 		$("body").css("overflow-y", "hidden");
 		$(".moudle").click(function() {
-			$(this).css("display", "none");
-			$(".side-nav").animate({"left":"-201px"});
+			$(".moudle").removeClass("element-show");
+			$("#side_nav").removeClass("side-nav-changed");
 			$("body").css("overflow-y", "auto");
 		});
 	});

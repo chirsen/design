@@ -54,9 +54,17 @@ body{
 		background-color: #eeeeee;
 	}
 
+	nav{
+		margin-top: 20px;
+	}
+
 	dt{
 		cursor: pointer;
 		padding: 10px 0px 10px 50px;
+	}
+
+	dt:hover{
+		background-color: #efefef;
 	}
 
 	.side-nav-children{
@@ -264,4 +272,27 @@ body{
 	}
 }
 
+.color-orange{
+	color: #ff5500;
+}
+
+.element-show{
+	display: block;
+}
+
+.side-nav-changed{
+	left: 0px;
+}
+
+.right-top-changed{
+	position: fixed;
+	height: 60px;
+}
+
+.right-top-title-changed{
+	position: fixed;
+	top: 10px;
+	font-size: 1.0em;
+
+}
 
