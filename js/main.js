@@ -54,4 +54,19 @@ $(document).ready(function() {
 			$("body").css("overflow-y", "auto");
 		});
 	});
+
+	//点击获取se值
+	$(".check-colors-item").hover(function(){
+	});
+
+	$(".check-colors-item").zclip({
+		path: "js/ZeroClipboard.swf",
+		copy: function(){
+		return $(this).attr("title");
+		},
+		afterCopy:function(){/* 复制成功后的操作 */
+			alert("fuzhichenggong");
+        }
+	});
+
 });

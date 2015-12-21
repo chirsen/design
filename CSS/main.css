@@ -192,7 +192,7 @@ body{
 	.check-colors-title{
 		position: absolute;
 		left: 15px;
-		top: 0px;
+		top: 5px;
 		font-size: 3em;
 		color: #888888;
 	}
@@ -205,21 +205,26 @@ body{
 
 	.check-colors-item-wrap{
 		position: relative;
-		height: 100%;
-		display: inline-block;
-		padding: 10px 0px 0px 20px;
 		top: 0px;
 		bottom: 0px;
+		display: inline-block;
+		padding: 10px 0px 0px 20px;
+		height: 100%;
 	}
 
 	.check-colors-item{
 		position: relative;
-		top: 0px;
+		margin-top: 0px;
 		box-sizing: border-box;
 		background-color: blue;
 		height: 100px;
 		width: 100%;
 		border: 1px solid #eeeeee;
+		cursor: pointer;
+	}
+
+	.check-colors-item:hover{
+		opacity: .7;
 	}
 
 	.check-colors-item-detail3{text-align: right; position: relative;top: 50px;}
@@ -290,8 +295,8 @@ body{
 		width: 620px;
 	}
 	.check-colors-title{width: 10%; font-size: 1.5em;}
-	.check-colors-blocks{width: 85%;}
-	.check-colors-item-wrap{width: 40%;}
+	.check-colors-blocks{width: 90%;}
+	.check-colors-item-wrap{width: 45%;}
 	.check-colors-item{height: 80px;}
 	.check-colors-item-detail3{font-size: 0.8em; text-align: right; position: relative;top: 40px;}
 
