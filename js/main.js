@@ -29,9 +29,11 @@ $(document).ready(function() {
 			if (height >= 240) {
 				//变为面包屑
 				$(".right-top").addClass("right-top-changed");
+				$("#theme_style").addClass("theme-style-changed");
 			} else {
 				//恢复
 				$(".right-top").removeClass("right-top-changed");
+				$("#theme_style").removeClass("theme-style-changed");
 			}
 			if (height <= 10) {
 				$("#totop").addClass("element-show");
