@@ -3,9 +3,6 @@ $(document).ready(function() {
 	//导航链接被点击
 	$("dt").click(function() {
 		$(this).next("div").toggle("slow");
-		$("dt").children("a").removeClass("color-orange");
-		$("nav-child-item").removeClass("color-orange");
-		$(this).children("a").addClass("color-orange");
 	});
 
 	$(".nav-child-item").click(function() {
@@ -20,7 +17,7 @@ $(document).ready(function() {
 	$(window).on("scroll resize",function() {
 
 		var height = $(this).scrollTop();
-		if ($(window).width() >= 720) {
+		if ($(window).width() >= 740) {
 			if (height >= 100) {
 				$(".right-top").children(".right-top-title").addClass("right-top-title-changed");
 			} else {
@@ -55,18 +52,23 @@ $(document).ready(function() {
 		});
 	});
 
-	//点击获取se值
+	//悬浮提示
 	$(".check-colors-item").hover(function(){
 	});
 
+	//点击获取se值
 	$(".check-colors-item").zclip({
 		path: "js/ZeroClipboard.swf",
+
 		copy: function(){
-		return $(this).attr("title");
+		return $(this);
 		},
+
 		afterCopy:function(){/* 复制成功后的操作 */
 			alert("fuzhichenggong");
         }
 	});
+
+	//foot提示值获取
 
 });
