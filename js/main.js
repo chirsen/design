@@ -17,8 +17,9 @@ $(document).ready(function() {
 	$(window).on("scroll resize",function() {
 		var total_height = $(document).height();
 		var height = $(this).scrollTop();
-		var right = (Number($(".right-content-wrap").width())-Number($(".content").width()))/2-90;
+
 		if ($(window).width() >= 740) {
+			var margin_top = height-170;
 			if (height >= 100) {
 				$(".right-top").children(".right-top-title").addClass("right-top-title-changed");
 			} else {
@@ -27,13 +28,11 @@ $(document).ready(function() {
 			if (height >= 195) {
 				//变为面包屑
 				$(".right-top").addClass("right-top-changed");
-				$("#theme_style").addClass("theme-style-changed");
-				$("#theme_style").css("right", right);
+				$("#theme_style").css("top", margin_top);
 			} else {
 				//恢复
 				$(".right-top").removeClass("right-top-changed");
-				$("#theme_style").removeClass("theme-style-changed");
-				$("#theme_style").css("right", "-100px");
+				$("#theme_style").css("top", "20px");
 			}
 			if (height <= 10) {
 				$("#totop").addClass("element-show");
@@ -41,13 +40,11 @@ $(document).ready(function() {
 				$("#totop").removeClass("element-show");
 			}
 		}else{
-			if(height >= 195){
-				$("#theme_style").addClass("theme-style-changed");
-				$("#theme_style").css("right", right);
+			var margin_top = height-20;
+			if(height >= 35){
+				$("#theme_style").css("top", margin_top);
 			}else{
-				$("#theme_style").removeClass("theme-style-changed");
-				$("#theme_style").css("right", "-100px");
-				$("#light").css("right", "-100px");
+				$("#theme_style").css("top", "20px");
 			}
 		}
 
@@ -85,7 +82,13 @@ $(document).ready(function() {
         }
 	});
 
-	//锚点
+	//提示
+	$(".check-colors-item").hover(function(){
+		$(this).children(".mask").addClass("element-show");
+		$(this).mouseout(function(){
+			$(this).children(".mask").removeClass("element-show");
+		});
+	});
 
 
 

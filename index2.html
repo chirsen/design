@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title></title>
 	<style type="text/css">
 	.aa{
 		position: relative;
-		width:109px;
-		height: 100px;
-		top:100px;
+		height: 400px;
+		width: 200px;
 		border: 2px solid black;
+		min-height: 100%;
+
+	}
+	
+	#bb{
+		position: absolute;
+		bottom: 0px;
+		width: 200px;
+		height: 100px;
+		background-color: gray;
+
 	}
 
-	.bb:hover{
-		visibility: visible;
+	#cc{
+		position: relative;
+		top: 0px;
+		width: 200px;
+		padding-top : 500px;
+		background-color: yellow;
+
 	}
-	.bb{
-		visibility: hidden;
-		position: absolute;
-		height: 100px;
-		width: 100px;
-		top: 10px;
-		background-color: blue;
-	}
+
+
 	</style>
 </head>
 	<div class="aa">
-		
-			点击获得色值
-		
+	<div id="cc"></div>
+		<div id="bb"></div>
 		
 	</div>
 </body>
