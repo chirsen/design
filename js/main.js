@@ -15,29 +15,45 @@ $(document).ready(function() {
 
 	//右侧的伸缩
 	$(window).on("scroll resize",function() {
-
+		var total_height = $(document).height();
 		var height = $(this).scrollTop();
+		var right = (Number($(".right-content-wrap").width())-Number($(".content").width()))/2-90;
 		if ($(window).width() >= 740) {
 			if (height >= 100) {
 				$(".right-top").children(".right-top-title").addClass("right-top-title-changed");
 			} else {
 				$(".right-top").children(".right-top-title").removeClass("right-top-title-changed");
 			}
-			if (height >= 240) {
+			if (height >= 195) {
 				//变为面包屑
 				$(".right-top").addClass("right-top-changed");
 				$("#theme_style").addClass("theme-style-changed");
+				$("#theme_style").css("right", right);
 			} else {
 				//恢复
 				$(".right-top").removeClass("right-top-changed");
 				$("#theme_style").removeClass("theme-style-changed");
+				$("#theme_style").css("right", "-100px");
 			}
 			if (height <= 10) {
 				$("#totop").addClass("element-show");
 			} else {
 				$("#totop").removeClass("element-show");
 			}
+		}else{
+			if(height >= 195){
+				$("#theme_style").addClass("theme-style-changed");
+				$("#theme_style").css("right", right);
+			}else{
+				$("#theme_style").removeClass("theme-style-changed");
+				$("#theme_style").css("right", "-100px");
+				$("#light").css("right", "-100px");
+			}
 		}
+
+		var margin_top = Number(height)/Number(total_height)*100;
+		$("#vertical_item").css("top", margin_top+"%");
+
 	});
 
 	//菜单被点击
@@ -61,14 +77,16 @@ $(document).ready(function() {
 		path: "js/ZeroClipboard.swf",
 
 		copy: function(){
-		return $(this);
+		return $(this).attr("title");
 		},
 
 		afterCopy:function(){/* 复制成功后的操作 */
-			alert("fuzhichenggong");
+			alert("已经复制颜色"+$(this).attr("title"));
         }
 	});
 
-	//foot提示值获取
+	//锚点
+
+
 
 });
