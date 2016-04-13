@@ -1,0 +1,30 @@
+#vertical{
+    position: absolute;
+    height: 65px;
+    background-color: #efefef;
+    width: 2px;
+    left: -4px;
+    top: 0px;
+}
+
+#vertical_item {
+    width: 2px;
+    position: absolute;
+    height: 1.0em;
+    background-color: #ff5000;
+}
+
+.vertical-discript{
+    position:absolute;
+    margin-left:3px;
+    top:-0.5em;
+}
+
+.theme-part{margin-top: 30px;}
+.theme-text{display: inline-block;vertical-align: top;line-height: 175%;width: 190px;}
+.theme-text span{font-weight: 400;}
+.theme-img{display: inline-block;max-width: 100%;}
+.littleBlock{width: 16px;height: 16px;border:solid 1px #bbb;display: inline-block;margin-right: 10px;vertical-align: middle;}
+.bg_wh_01_02{
+	background-color: #333333  ;
+}

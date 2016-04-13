@@ -1,0 +1,196 @@
+table, td, th, tr{
+	border: 1px solid #D4D4D4;
+	padding: 10px 0px;
+}
+table{
+	margin-top: 30px;
+}
+
+table.first{
+	margin-top: 50px;
+	border-collapse: collapse;
+}
+
+table.second{
+	margin-top: 50px;
+	border-collapse: collapse;
+}
+td{
+	position: relative;
+	width: 195px;
+}
+td.tab-th{
+	width: 130px;
+	height: 200px;
+	padding: 0px;
+}
+td.tab-content{
+	width: 600px;
+}
+
+table.third{
+	margin-top: 70px;
+	border-collapse: collapse;
+}
+td.footbar-th{
+
+}
+.footbar-top{
+	padding-bottom: 40px;
+}
+
+table.forth{
+	margin-top: 50px;
+	border-collapse: collapse;
+	margin-bottom: 100px;
+}
+
+p{
+	font-size: 12px;
+	line-height: 10px;
+}
+p.descript{
+	font-size: 16px;
+	color: #555555;
+	line-height: 1.5em;
+}
+a{
+
+}
+
+#vertical{
+    position: absolute;
+    height: 88px;
+    background-color: #efefef;
+    width: 2px;
+    left: -4px;
+}
+
+#vertical_item {
+    width: 2px;
+    position: absolute;
+    height: 1.0em;
+    background-color: #ff5000;
+}
+
+.vertical-discript{
+    position:absolute;
+    margin-left:3px;
+    top:-0.5em;
+    width: 200px;
+} 
+
+
+.colum-1{
+	text-align: left;
+	padding-left: 20px;
+}
+.layout-item-color{
+	float: left;
+	margin-left: 30px;
+	width:20px; 
+	height:20px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.layout-item-bottom{
+	margin: 5px 0px;
+	width:20px; 
+	height:20px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.layout-item-color-descript{
+	float: left;
+	display:inline-block; 
+	vertical-align:middle;
+	padding-left:10px;
+}
+
+.tabs-item-top{
+	font-size: 12px;
+	margin-top: -40px;
+	padding: 10px 0px 10px 0px;
+}
+.tabs-item-left{
+	position: absolute;
+	left: -45px;
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.tabs-item-middle{
+	position: relative;
+	font-size: 12px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.tabs-item-right{
+	position: absolute;
+	top: -30px;
+	right: -190px;
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: middle
+}
+.tabs-item-bottom{
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.footbar-item-middle{
+	position: relative;
+	font-size: 12px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.footbar-item-right{
+	position: absolute;
+	top: -10px;
+	right: -100px;
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: middle
+}
+.footbar-item-bottom{
+	margin-top: 20px;
+}
+.per-th{
+	height: 60px;
+}
+
+.img-descript-top{
+	position: absolute;
+	font-size: 12px;
+	top:-20px;
+	left: 125px;
+}
+.img-descript-middle{
+	position: relative;
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.img-descript-left{
+	position: absolute;
+	top:-10px;
+	left: -80px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.img-descript-right{
+	position: absolute;
+	right: -40px;
+	top: 10px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.img-descript-bottom{
+	position: absolute;
+	font-size: 12px;
+	bottom: -20px;
+	left: 125px;
+	vertical-align: middle;
+}

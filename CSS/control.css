@@ -1,0 +1,52 @@
+.pageTitle{
+	padding: 50px 0px 25px 0px;
+}
+#vertical{
+    position: absolute;
+    height: 180px;
+    background-color: #efefef;
+    width: 2px;
+    left: -4px;
+    top: 0px;
+}
+
+#vertical_item {
+    width: 2px;
+    position: absolute;
+    height: 1.0em;
+    background-color: #ff5000;
+}
+
+.vertical-discript{
+    position:absolute;
+    margin-left:3px;
+    top:-0.5em;
+    width: 200px;
+}
+
+h2{font-weight: normal;}
+
+.controllerType{position: relative; display: inline-block;}
+.pageLeft{min-width: 555px; text-align: left;}
+.pageRight{text-align: left;}
+.header{margin-top: 50px; position: relative; margin-bottom: -20px;}
+.phoneType{display:inline-block;text-align: center; color: #333; font-size: 24px; min-width: 555px; text-align: left;}
+.pt_left{min-width: 320px;text-align: center;display: inline-block;font-size: 24px;}
+.pt_right{min-width: 320px;text-align: center;display: inline-block;font-size: 24px;}
+/*.controllerType td{height: 20px;}*/
+.checkImg{margin-right: 10px;}
+
+.m_l_less{margin-left: -12px;}
+
+.conroller_footer{line-height: 165%; padding: 0px 0px 20px 0px; }
+
+.checkText{display: inline-block; min-width: 150px;}
+.checkImg{vertical-align: middle;}
+
+.radiobuttonText{padding-bottom: 20px;}
+
+.editText{display:inline-block; min-width: 150px;}
+.editImg1{vertical-align: middle; margin-left: -25px;}
+.editImg2{vertical-align: middle;}
+.editImg3{vertical-align: middle;}
+.editImg4{vertical-align: middle;}

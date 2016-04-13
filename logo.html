@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title>视觉规范</title>
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/logo.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/jquery.zclip.js"></script>
@@ -16,28 +17,22 @@
 		<div id = "side-nav-logo">
 			<img src="images/top_icon.png">
 		</div>
-		<div class = "side-nav-title"> 
+		<div class = "side-nav-title">
 			<span id = "side-nav-title">
 				移动端视觉规范
 			</span>
-		</div>		
+		</div>
 		<nav>
 			<dl>
-				<dt><a class="nav-item"  style="color:#ff5000" href="/logo.html"><img class="trangle"  style="visibility:visible" src="images/sanjiao.png">Logo</a></dt>
-				<dt><a class="nav-item" href="/color.html"><img class="trangle" src="images/sanjiao.png">标准色</a></dt>
-				<dt><a class="nav-item" href="#"><img class="trangle" src="images/sanjiao.png">标准字</a></dt>
-				<dt><a class="nav-item" href="#"><img class="trangle" src="images/sanjiao.png">图标</a></dt>
-				<dt><a class="nav-item" href="#"><img class="trangle" src="images/sanjiao.png">按钮</a></dt>
-				<dt><a class="nav-item"> <img class="trangle" src="images/sanjiao.png">控件</a></dt>
-				<div class="side-nav-children">
-					<dd>
-						<a class="nav-child-item" href="#"><img class="trangle" src="images/sanjiao.png">1</a>
-						<a class="nav-child-item" href="#"><img class="trangle" src="images/sanjiao.png">2</a>
-					</dd>
-				</div>
-				<dt><a class="nav-item" href="#"><img class="trangle" src="images/sanjiao.png">布局</a></dt>
-				<dt><a class="nav-item" href="#"><img class="trangle" src="images/sanjiao.png">命名</a></dt>
-				<dt><a class="nav-item" href="#"><img class="trangle" src="images/sanjiao.png">适配</a></dt>
+				<dt><a class="nav-item" style="color:#ff5000" href="./logo.html"><img class="trangle"  style="visibility:visible" src="images/sanjiao.png">Logo</a></dt>
+				<dt><a class="nav-item" href="./color.html"><img class="trangle" src="images/sanjiao.png">标准色</a></dt>
+				<dt><a class="nav-item" href="./standerd_font.html"><img class="trangle" src="images/sanjiao.png">标准字</a></dt>
+				<dt><a class="nav-item" href="./icons.html"><img class="trangle" src="images/sanjiao.png">图标</a></dt>
+				<dt><a class="nav-item" href="./button.html"><img class="trangle" src="images/sanjiao.png">按钮</a></dt>
+				<dt><a class="nav-item" href="./controler.html"> <img class="trangle" src="images/sanjiao.png">控件</a></dt>
+				<dt><a class="nav-item" href="./layout.html"><img class="trangle" src="images/sanjiao.png">布局</a></dt>
+				<dt><a class="nav-item" href="./named.html"><img class="trangle" src="images/sanjiao.png">命名</a></dt>
+				<dt><a class="nav-item" href="./adapter.html"><img class="trangle" src="images/sanjiao.png">适配</a></dt>
 			</dl>
 		</nav>
 	</div>
@@ -48,17 +43,17 @@
 <div class="right-top">
 	<span class="right-top-menu">菜单</span>
 	<div class="right-top-title">移动端视觉规范6.0</div>
-	
+
 </div>
 
 <div class="right-content-wrap">
 	<div class="content">
 		<div id="theme_style" class="theme-style">
-			<div id="vertical_3">
+			<div id="vertical">
 				<div id="vertical_item"></div>
 			</div>
-			<div style="display:inline-block;position:absolute;margin-left:3px;top:-0.5em">
-				<a id="standerd" class="theme-item" href="#">标准Logo</a>
+			<div class="vertical-discript">
+				<a id="standerd" class="theme-item color-orange" href="#">标准Logo</a>
 				<a id="application" class="theme-item" href="#application_theme">标示应用</a>
 				<a id="download" class="theme-item" href="#download_theme">Icon下载</a>
 			</div>
@@ -66,7 +61,6 @@
 
 		<div  class="par">
 			<h2  class="color-orange">Logo 基本元素\标示结构规范</h2>
-			<p>行业背景配合企业文化，与单调乏味的周边环境形成鲜明的对比。引出意想不到且充满活力的配色。限制颜色的数量，在众多基础色中选出三个色度以及一个强调色。</p>
 			<div class="inline-block-half-left">
 				<span class="self-h2">标识与其它因素分离及最小比例规范</span>
 				<p>标识与其它因素分离以突出标识自身的特性，在复杂背景下须在标志周围留出空间，具体可参见图示中的比例，按照实际情况作适当调整。</p>
@@ -82,21 +76,21 @@
 					注：X为一个标准计量单位
 				</p>
 				<img src="images/download_icon.png"><a class="icons-download"> 下载矢量Logo</a>
-				
+
 			</div>
-			<img src="images/logo_text&icon.png" class="inline-block-top logo-images">
+			<img  id="application_theme" src="images/logo_text&icon.png" class="inline-block-top logo-images">
 		</div>
 
-		<div id="application_theme" class="par">
+		<div class="par">
 			<div class="inline-block-half-left  inline-block-top">
 				<span class="self-h2">标识在不同明度、色相背景中的应用</span>
 				<p>
-					背景色色度、色相规范是标志图形与背景色之间色彩明暗关系规范，直接影响视觉识别度，任何部门或媒体单位不得违背色彩应用的基本原则，色彩明度范例。
+					背景色色度、色相规范是标志图形与背景色之间色彩明暗关系规范，直接影响视觉识别度，任何部门或媒体单位不得违背色彩应用的基本原则，任意改变色彩的配格关系。不符合规范的色彩明度范例即为禁止使用的色彩明度范例。
 				</p>
 				<p>
-					在应用中，应严格参照以上规格，其中应参照搭配原则就是背景色色度越深，标志图形色度越亮，背景色色度越浅，标志图形色度越深，低色度背景+低色度图形和高色度背景+高色度标志图形的搭配形式是被严格禁用。
+					在应用中，应严格参照以上规格，其中应参照搭配原则就是背景色色度越深，标志图形色度越亮，背景色色度越浅，标志图形色度越深，低色度背景+低色度图形和高色度背景+高色度标志图形的搭配形式是被严 格禁用。
 				</p>
-				
+
 			</div>
 			<img src="images/yuan.png" class="logo-images">
 			<div class="inline-block-half-left inline-block-top">
@@ -107,101 +101,103 @@
 				</p>
 			</div>
 			<img src="images/yuan2.png" class="logo-images">
-			
+
 		</div>
 
 		<div id="download_theme" class="par">
+			<div class="inline-block-half-left  inline-block-top">
 			<div>
 				<h2>App Icon</h2>
 				<p>512X512 px 标准样式 <img src="images/stan_arrow.png"></p>
 			</div>
 			<br>
 			<div class="par3_icons_list">
-				<img src="images/radius_icon.png"><span class="inline-block-top"> 圆角各分辨率下载（png格式 透明底）</span>
+				<img src="images/radius_icon.png"><span class="inline-block-top">&nbsp;圆角各分辨率下载（png格式 透明底）</span>
 				<br>
 				<div class="icons-cownload-cloumns">
-					<a class="icons-download" href="">1024x1024</a>
-					<a class="icons-download" href="">222x222</a>
-					<a class="icons-download" href="">136x136</a>
-					<a class="icons-download" href="">108x108</a>
-					<a class="icons-download" href="">90x90</a>
-					<a class="icons-download" href="">72x72</a>
-					<a class="icons-download" href="">57x57</a>
-					<a class="icons-download" href="">28x28</a>					
+					<a class="icons-download" href="./images/APPlogo_radius/1024.png" download>1024x1024</a>
+					<a class="icons-download" href="./images/APPlogo_radius/222.png" download>222x222</a>
+					<a class="icons-download" href="./images/APPlogo_radius/136.png" download>136x136</a>
+					<a class="icons-download" href="./images/APPlogo_radius/108.png" download>108x108</a>
+					<a class="icons-download" href="./images/APPlogo_radius/90.png" download>90x90</a>
+					<a class="icons-download" href="./images/APPlogo_radius/72.png" download>72x72</a>
+					<a class="icons-download" href="./images/APPlogo_radius/57.png" download>57x57</a>
+					<a class="icons-download" href="./images/APPlogo_radius/28.png" download>28x28</a>
 				</div><div class="icons-cownload-cloumns">
-					<a class="icons-download" href="">512x512</a>
-					<a class="icons-download" href="">162x162</a>
-					<a class="icons-download" href="">124x124</a>
-					<a class="icons-download" href="">105x105</a>
-					<a class="icons-download" href="">88x88</a>
-					<a class="icons-download" href="">70x70</a>
-					<a class="icons-download" href="">48x48</a>
-					<a class="icons-download" href="">16x16</a>					
+					<a class="icons-download" href="./images/APPlogo_radius/512.png" download>512x512</a>
+					<a class="icons-download" href="./images/APPlogo_radius/162.png" download>162x162</a>
+					<a class="icons-download" href="./images/APPlogo_radius/124.png" download>124x124</a>
+					<a class="icons-download" href="./images/APPlogo_radius/105.png" download>105x105</a>
+					<a class="icons-download" href="./images/APPlogo_radius/88.png" download>88x88</a>
+					<a class="icons-download" href="./images/APPlogo_radius/70.png" download>70x70</a>
+					<a class="icons-download" href="./images/APPlogo_radius/48.png" download>48x48</a>
+					<a class="icons-download" href="./images/APPlogo_radius/16.png" download>16x16</a>
 				</div><div class="icons-cownload-cloumns">
-					<a class="icons-download" href="">300x300</a>
-					<a class="icons-download" href="">150x150</a>
-					<a class="icons-download" href="">120x120</a>
-					<a class="icons-download" href="">100x100</a>
-					<a class="icons-download" href="">80x80</a>
-					<a class="icons-download" href="">64x64</a>
-					<a class="icons-download" href="">36x36</a>
-					<a class="icons-download" href="">36x36</a>					
+					<a class="icons-download" href="./images/APPlogo_radius/300.png" download>300x300</a>
+					<a class="icons-download" href="./images/APPlogo_radius/150.png" download>150x150</a>
+					<a class="icons-download" href="./images/APPlogo_radius/120.png" download>120x120</a>
+					<a class="icons-download" href="./images/APPlogo_radius/100.png" download>100x100</a>
+					<a class="icons-download" href="./images/APPlogo_radius/80.png" download>80x80</a>
+					<a class="icons-download" href="./images/APPlogo_radius/64.png" download>64x64</a>
+					<a class="icons-download" href="./images/APPlogo_radius/36.png" download>36x36</a>
+					<a class="icons-download" href="./images/APPlogo_radius/36.png" download>36x36</a>
 				</div><div class="icons-cownload-cloumns">
-					<a class="icons-download" href="">256x256</a>
-					<a class="icons-download" href="">144x144</a>
-					<a class="icons-download" href="">114x114</a>
-					<a class="icons-download" href="">96x96</a>
-					<a class="icons-download" href="">75x75</a>
-					<a class="icons-download" href="">62x62</a>
-					<a class="icons-download" href="">32x32</a>
-					<a class="icons-download" href="">32x32</a>					
+					<a class="icons-download" href="./images/APPlogo_radius/256.png" download>256x256</a>
+					<a class="icons-download" href="./images/APPlogo_radius/144.png" download>144x144</a>
+					<a class="icons-download" href="./images/APPlogo_radius/114.png" download>114x114</a>
+					<a class="icons-download" href="./images/APPlogo_radius/96.png" download>96x96</a>
+					<a class="icons-download" href="./images/APPlogo_radius/75.png" download>75x75</a>
+					<a class="icons-download" href="./images/APPlogo_radius/62.png" download>62x62</a>
+					<a class="icons-download" href="./images/APPlogo_radius/32.png" download>32x32</a>
+					<a class="icons-download" href="./images/APPlogo_radius/32.png" download>32x32</a>
 				</div>
 				<br>
-				
-				<img src="images/cornor_icon.png"><span class="inline-block-top">直角各分辨率下载（png格式）</span>
+
+				<img src="images/cornor_icon.png" download><span class="inline-block-top">&nbsp;直角各分辨率下载（png格式）</span>
 				<br>
 				<div class="icons-cownload-cloumns">
-					<a class="icons-download" href="">1024x1024</a>
-					<a class="icons-download" href="">222x222</a>
-					<a class="icons-download" href="">136x136</a>
-					<a class="icons-download" href="">108x108</a>
-					<a class="icons-download" href="">90x90</a>
-					<a class="icons-download" href="">72x72</a>
-					<a class="icons-download" href="">57x57</a>
-					<a class="icons-download" href="">28x28</a>					
+					<a class="icons-download" href="./images/APPlogo_sharp/1024.png" download>1024x1024</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/222.png" download>222x222</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/136.png" download>136x136</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/108.png" download>108x108</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/90.png" download>90x90</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/72.png" download>72x72</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/57.png" download>57x57</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/28.png" download>28x28</a>
 				</div><div class="icons-cownload-cloumns">
-					<a class="icons-download" href="">512x512</a>
-					<a class="icons-download" href="">162x162</a>
-					<a class="icons-download" href="">124x124</a>
-					<a class="icons-download" href="">105x105</a>
-					<a class="icons-download" href="">88x88</a>
-					<a class="icons-download" href="">70x70</a>
-					<a class="icons-download" href="">48x48</a>
-					<a class="icons-download" href="">16x16</a>					
+					<a class="icons-download" href="./images/APPlogo_sharp/512.png" download>512x512</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/162.png" download>162x162</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/124.png" download>124x124</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/105.png" download>105x105</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/88.png" download>88x88</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/70.png" download>70x70</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/48.png" download>48x48</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/16.png" download>16x16</a>
 				</div><div class="icons-cownload-cloumns">
-					<a class="icons-download" href="">300x300</a>
-					<a class="icons-download" href="">150x150</a>
-					<a class="icons-download" href="">120x120</a>
-					<a class="icons-download" href="">100x100</a>
-					<a class="icons-download" href="">80x80</a>
-					<a class="icons-download" href="">64x64</a>
-					<a class="icons-download" href="">36x36</a>
-					<a class="icons-download" href="">36x36</a>					
+					<a class="icons-download" href="./images/APPlogo_sharp/300.png" download>300x300</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/150.png" download>150x150</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/120.png" download>120x120</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/100.png" download>100x100</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/80.png" download>80x80</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/64.png" download>64x64</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/36.png" download>36x36</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/36.png" download>36x36</a>
 				</div><div class="icons-cownload-cloumns">
-					<a class="icons-download" href="">256x256</a>
-					<a class="icons-download" href="">144x144</a>
-					<a class="icons-download" href="">114x114</a>
-					<a class="icons-download" href="">96x96</a>
-					<a class="icons-download" href="">75x75</a>
-					<a class="icons-download" href="">62x62</a>
-					<a class="icons-download" href="">32x32</a>
-					<a class="icons-download" href="">32x32</a>					
+					<a class="icons-download" href="./images/APPlogo_sharp/256.png" download>256x256</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/144.png" download>144x144</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/114.png" download>114x114</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/96.png" download>96x96</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/75.png" download>75x75</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/62.png" download>62x62</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/32.png" download>32x32</a>
+					<a class="icons-download" href="./images/APPlogo_sharp/32.png" download>32x32</a>
 				</div>
-			</div>	
+			</div>
+			</div>
 			<img src="images/em_logo_radius.png" class="logo-images">
 
 		</div>
-		
+
 	</div>
 
 	<div class="footer">
@@ -213,11 +209,11 @@
 				<div>前页</div>
 				<div>none</div>
 			</div>
-			
+
 		</a>
 
-		<a class="next" href="/color.html">
-			
+		<a class="next" href="./color.html">
+
 			<div class="text-next">
 				<div>后页</div>
 				<div>标准色</div>
@@ -233,7 +229,7 @@
 		<img src="" alt="回到顶部"></a>
 	</div>
 
-	
+
 
 </div>
 </body>

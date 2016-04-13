@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta charset="utf-8">
+	<title>视觉规范</title>
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/control.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.zclip.js"></script>
+</head>
+<body>
+<div class="moudle"></div>
+<div id = "side_nav" class="side-nav">
+	<div class="side-nav-wrap">
+		<div id = "side-nav-logo">
+			<img src="images/top_icon.png">
+		</div>
+		<div class = "side-nav-title">
+			<span id = "side-nav-title">
+				移动端视觉规范
+			</span>
+		</div>
+		<nav>
+			<dl>
+				<dt><a class="nav-item" href="./logo.html"><img class="trangle"  src="images/sanjiao.png">Logo</a></dt>
+				<dt><a class="nav-item" href="./color.html"><img class="trangle" src="images/sanjiao.png">标准色</a></dt>
+				<dt><a class="nav-item" href="./standerd_font.html"><img class="trangle" src="images/sanjiao.png">标准字</a></dt>
+				<dt><a class="nav-item" href="./icons.html"><img class="trangle" src="images/sanjiao.png">图标</a></dt>
+				<dt><a class="nav-item" href="./button.html"><img class="trangle" src="images/sanjiao.png">按钮</a></dt>
+				<dt><a class="nav-item" style="color:#ff5000" href="./controler.html"> <img class="trangle" style="visibility:visible" src="images/sanjiao.png">控件</a></dt>
+				<dt><a class="nav-item" href="./layout.html"><img class="trangle" src="images/sanjiao.png">布局</a></dt>
+				<dt><a class="nav-item" href="./named.html"><img class="trangle" src="images/sanjiao.png">命名</a></dt>
+				<dt><a class="nav-item" href="./adapter.html"><img class="trangle" src="images/sanjiao.png">适配</a></dt>
+			</dl>
+		</nav>
+	</div>
+	<div class="side-nav-legal">东方财富网UED</div>
+</div>
+
+
+<div class="right-top">
+	<span class="right-top-menu">菜单</span>
+	<div class="right-top-title">移动端视觉规范6.0</div>
+
+</div>
+
+<div class="right-content-wrap">
+	<div class="content">
+		<div id="theme_style" class="theme-style">
+			<div id="vertical">
+				<div id="vertical_item"></div>
+			</div>
+			<div class="vertical-discript">
+				<a id="header" class="theme-item color-orange" href="#">Header</a>
+				<a id="footer" class="theme-item" href="#2">Footer</a>
+				<a id="switch" class="theme-item" href="#3">Switch</a>
+				<a id="checkbox" class="theme-item" href="#4">Checkbox</a>
+				<a id="radiobutton" class="theme-item" href="#5">Radiobutton</a>
+				<a id="exittext" class="theme-item" href="#6">Exittext</a>
+				<a id="dialog" class="theme-item" href="#7">Dialog</a>
+				<a id="loading" class="theme-item" href="#9">Loading</a>
+			</div>
+		</div>
+
+			<div class="header">
+                <table class="controllerType">
+                    <thead>
+                        <tr>
+                            <th class="pageLeft"><span class="pt_left">iOS版</span></th>
+                            <th class="pageRight"><span class="pt_right">android版</span></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <h1 id="1" class="pageTitle">Header</h1>
+            <table class="controllerType">
+                <tbody>
+                    <tr>
+                        <td class="pageLeft"><img src="./images/controller_header_l_1.png" alt=""></td>
+                        <td class="pageRight"><img src="./images/controller_header_r_1.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="pageLeft"><img class="m_l_less" src="./images/controller_header_l_2.png" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1 id="2" class="pageTitle">Footer</h1>
+            <p class="pageIntroduce conroller_footer">Footer承载主要的操作项，其Action为中英文字或(Icon+文字)的形式。
+                <br>Footer上最多放置五个Action，如有更多操作时可选择将最右侧Action置为更多。</p>
+            <img src="./images/controller_footer_l_1.png" alt="">
+            <br>
+            <br>
+            <img src="./images/controller_footer_l_2.png" alt="">
+            <h1 id="3" class="pageTitle">Switch</h1>
+            <p class="pageIntroduce">单击控件或单击整条list都可响应。</p>
+            <table class="controllerType">
+                <tbody>
+                    <tr>
+                        <td class="pageLeft"><img src="./images/controller_switch_l_1.png" alt=""></td>
+                        <td class="pageRight"><img src="./images/controller_switch_r_1.png" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1 id="4" class="pageTitle">Checkbox</h1>
+            <table class="controllerType">
+                <tbody>
+                    <tr>
+                        <td class="pageLeft">
+                            <span class="checkText">非选中状态</span>
+                            <img src="./images/controller_checkbox_1.png" alt="" class="checkImg">
+                        </td>
+                        <td class="pageRight">
+                            <span class="checkText">非选中状态</span>
+                            <img src="./images/controller_checkbox_1.png" alt="" class="checkImg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pageLeft">
+                            <span class="checkText">选中激活状态</span>
+                            <img src="./images/controller_checkbox_l_2.png" alt="" class="checkImg">
+                        </td>
+                        <td class="pageRight">
+                            <span class="checkText">选中激活状态</span>
+                            <img src="./images/controller_checkbox_r_2.png" alt="" class="checkImg">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1 id="5" class="pageTitle">Radiobutton</h1>
+            <table class="controllerType">
+                <tbody>
+                    <tr>
+                        <td class="pageLeft">
+                            <span class="radiobuttonText">勾选激活</span>
+                            <br>
+                            <br>
+                            <img src="./images/controller_radio_l.png" alt="">
+                        </td>
+                        <td class="pageRight">
+                            <span class="radiobuttonText">点选激活</span>
+                            <br>
+                            <br>
+                            <img src="./images/controller_radio_r.png" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1 id="6" class="pageTitle">Edittext</h1>
+            <table class="controllerType">
+                <tbody>
+                    <tr>
+                        <td class="pageLeft"><span class="editText">普通无内容</span><img src="./images/controller_ed_ios_1.png" alt="" class="editImg1"></td>
+                        <td class="pageRight"><img src="./images/controller_ed_android_1.png" alt="" class="editImgRight"></td>
+                    </tr>
+                    <tr>
+                        <td class="pageLeft"><span class="editText">激活普通无内容</span><img src="./images/controller_ed_ios_2.png" alt="" class="editImg2"></td>
+                        <td class="pageRight"><img src="./images/controller_ed_android_2.png" alt="" class="editImgRight"></td>
+                    </tr>
+                    <tr>
+                        <td class="pageLeft"><span class="editText">激活有内容</span><img src="./images/controller_ed_ios_3.png" alt="" class="editImg3"></td>
+                        <td class="pageRight"><img src="./images/controller_ed_android_3.png" alt="" class="editImgRight"></td>
+                    </tr>
+                    <tr>
+                        <td class="pageLeft"><span class="editText">普通有内容</span><img src="./images/controller_ed_ios_4.png" alt="" class="editImg2"></td>
+                        <td class="pageRight"><img src="./images/controller_ed_android_4.png" alt="" class="editImgRight"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1 id="7" class="pageTitle">Dialog</h1>
+            <div class="controllerType">
+                <div class="pageLeft">
+                    <img src="./images/controller_dialog.png" alt="">
+                </div>
+            </div>
+            <h1 class="pageTitle" id="9">Loading</h1>
+            <div class="controllerType">
+                <div class="pageLeft">
+                    <img src="./images/controller_loading.png" alt="">
+                </div>
+            </div>
+
+	</div>
+
+	<div class="footer">
+            <a class="pre" href="./button.html">
+                <div class="arrow-pre">
+                    <img src="images/pre_page.png">
+                </div>
+                <div class="text-pre">
+                    <div>前页</div>
+                    <div>按 钮</div>
+                </div>
+            </a>
+            <a class="next" href="./layout.html">
+                <div class="text-next">
+                    <div>后页</div>
+                    <div>布 局</div>
+                </div>
+                <div class="arrow-next">
+                    <img src="images/next_page.png">
+                </div>
+            </a>
+        </div>
+
+	<div id="totop">
+		<a href="#">
+		<img src="" alt="回到顶部"></a>
+	</div>
+
+
+
+</div>
+</body>
+</html>

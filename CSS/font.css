@@ -1,0 +1,60 @@
+#vertical{
+    position: absolute;
+    height: 45px;
+    background-color: #efefef;
+    width: 2px;
+    left: -4px;
+}
+
+#vertical_item {
+    width: 2px;
+    position: absolute;
+    height: 1.0em;
+    background-color: #ff5000;
+}
+
+.vertical-discript{
+    position:absolute;
+    margin-left:3px;
+    top:-0.5em;
+} 
+
+table{
+    width: 100%;
+}
+
+p{
+    margin: 10px 0px;
+}
+.table-use-place{
+    text-align: left;
+    font-weight: 300;
+}
+.table-use-decript{
+    text-align: left;
+    font-size: 10px;
+    color:#888888;
+}
+.table-title{
+    font-size: 48px;
+    color: #888888;
+}
+table.second-colum{
+
+}
+.last-colum{
+    text-align: left;
+    margin-left: 40px;
+}
+.font-par{
+    margin-top: 50px;
+    vertical-align: top;
+    line-height: 70%;
+}
+.standerd{
+    display:inline-block; 
+    width:150px;
+    margin-left:20px;
+    text-align:left;
+}
+

@@ -1,0 +1,47 @@
+.buttonPage{table-layout: fixed; margin-top: 50px;}
+.buttonPage thead{}
+.buttonPage td{text-align: left;}
+.buttonStatus{min-min-width: 100px; text-align: left;vertical-align: bottom;}
+.important-lightTheme{min-width: 470px; text-align: center;height: 50px; color: #555;}
+.important-darkTheme{min-width: 350px;text-align: center;}
+.importantButtonLine{height: 100px;}
+.importantButtonText{}
+.important-1-2{margin-top: 30px;}
+
+.normalFirstItem{margin-top: 40px;}
+.normalItem{height:85px; line-height: 85px;}
+.normalButtonText{display:inline-block;  vertical-align: middle; height: 45px; line-height: 45px; min-width: 100px;}
+.normalButtonImg{height: 45px; vertical-align: middle;}
+.normalButtonDetail{margin-left: 100px;}
+
+.buyAbout{table-layout: fixed; margin-top: 50px;}
+.buttonStatus{min-width: 100px; color: #555;}
+.about-lightTheme{text-align: center; color: #555;}
+.about-darkTheme{text-align: center; color: #555;}
+.about-buttons{height: 80px;}
+.about-text{height: 40px;}
+.smallerImg{min-width: 170px; text-align: left;}
+.emptyCol{min-width: 120px;}
+
+#vertical{
+    position: absolute;
+    height: 65px;
+    background-color: #efefef;
+    width: 2px;
+    left: -4px;
+    top: 0px;
+}
+
+#vertical_item {
+    width: 2px;
+    position: absolute;
+    height: 1.0em;
+    background-color: #ff5000;
+}
+
+.vertical-discript{
+    position:absolute;
+    margin-left:3px;
+    top:-0.5em;
+    width: 200px;
+}

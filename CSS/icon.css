@@ -1,0 +1,66 @@
+h3{font-weight: normal;}
+p{
+	font-size: 16px;
+}
+.system-color{
+	font-size: 18px;
+	color:rgb(102,102,102);
+}
+.system-color-decript{
+	font-size: 14px;
+	color:rgb(102,102,102);
+}
+.icon-bottom-eg{
+	display: inline-block;
+	vertical-align: 120px;
+	padding-left: 150px;
+}
+.icons-item{
+	display: inline-block;
+	padding: 20px 80px 0px 0px;
+}
+p.items-descript{
+	text-align: center;
+	font-size: 14px;
+}
+.rect{
+	max-width: 81px;
+	max-height: 81px;
+}
+.radius{
+}
+
+#vertical{
+    position: absolute;
+    height: 40px;
+    background-color: #efefef;
+    width: 2px;
+    left: -4px;
+    top: 0px;
+}
+
+#vertical_item {
+    width: 2px;
+    position: absolute;
+    height: 1.0em;
+    background-color: #ff5000;
+}
+
+.vertical-discript{
+    position:absolute;
+    margin-left:3px;
+    top:-0.5em;
+    width: 200px;
+}
+
+.iconPage-title{margin-top: 40px; font-size: 24px;}
+.iconPage-introduce{margin-top: 20px; font-size: 16px;color: #555;}
+.rule_1{margin-top: 20px;}
+.rule_others{display: inline-block;width: 300px; margin-right: 90px;}
+.ruleIntroduce{margin-top: 20px; font-size: 16px;font-weight: 100px;}
+.ruleExample{margin-top: 20px;}
+table{table-layout: fixed;margin-top: 45px;}
+.downloadIcon{display: block; width: 110px;text-align: center; text-decoration: none;}
+.downloadIcon img{margin-bottom: 10px; width: 80px; height: 80px;}
+.iconName{color: #555;}
+td{width: 160px; height: 175px;}
